@@ -1,27 +1,26 @@
-import React, { useState } from 'react';
-import './SignIn.css'; 
+import React, { useState } from "react";
+import "./SignIn.css";
 
 function SignIn() {
   const [formData, setFormData] = useState({
-    username: '',
-    password: '',
-    last_name: ''
+    username: "",
+    password: "",
+    last_name: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      
     } catch (error) {
-      console.error('Error registering user:', error);
+      console.error("Error registering user:", error);
     }
   };
 
@@ -40,7 +39,7 @@ function SignIn() {
             required
           />
         </div>
-      
+
         <div className="form-group">
           <label htmlFor="password">Password</label>
           <input
@@ -52,9 +51,10 @@ function SignIn() {
             required
           />
         </div>
-       
-       
-        <button class="button-signin" type="submit">Sign in</button>
+
+        <button class="button-signin" type="submit">
+          Sign in
+        </button>
       </form>
     </div>
   );
