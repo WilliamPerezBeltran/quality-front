@@ -1,4 +1,4 @@
-import React, {  lazy, Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import VistaIndex from "./vistas/VistaIndex";
 import { Routes, Route } from "react-router-dom";
 

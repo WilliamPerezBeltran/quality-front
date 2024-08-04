@@ -5,12 +5,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <div id="Footer">
-
-     
-              <p>
-                test
-              </p>
-            
+      <p>test</p>
     </div>
   );
 }

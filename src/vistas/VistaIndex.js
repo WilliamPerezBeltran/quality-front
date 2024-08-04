@@ -1,11 +1,9 @@
 import React, { Component, lazy, Suspense } from "react";
 
 function VistaIndex() {
-  
   return (
     <div>
-    <p>vista index</p>
-      
+      <p>vista index</p>
     </div>
   );
 }
