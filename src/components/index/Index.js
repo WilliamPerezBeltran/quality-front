@@ -2,8 +2,8 @@ import React from "react";
 import SignUp from "../signup/SignUp";
 import SignIn from "../signin/SignIn";
 
-import "./Auth.css";
-const Auth = () => {
+import "./Index.css";
+const Index = () => {
   return (
     <div class="container-auth">
       <SignIn />
@@ -12,4 +12,4 @@ const Auth = () => {
   );
 };
 
-export default Auth;
+export default Index;
