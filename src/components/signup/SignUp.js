@@ -1,29 +1,28 @@
-import React, { useState } from 'react';
-import './SignUp.css'; 
+import React, { useState } from "react";
+import "./SignUp.css";
 
 function SignUp() {
   const [formData, setFormData] = useState({
-    username: '',
-    password: '',
-    email: '',
-    first_name: '',
-    last_name: ''
+    username: "",
+    password: "",
+    email: "",
+    first_name: "",
+    last_name: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      
     } catch (error) {
-      console.error('Error registering user:', error);
+      console.error("Error registering user:", error);
     }
   };
 
@@ -84,7 +83,9 @@ function SignUp() {
             onChange={handleChange}
           />
         </div>
-        <button class="button-signup"type="submit">Sign Up</button>
+        <button class="button-signup" type="submit">
+          Sign Up
+        </button>
       </form>
     </div>
   );
