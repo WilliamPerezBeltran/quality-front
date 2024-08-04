@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+
 export const AuthContext = createContext({
   userInfo: false,
   setUserInfo: (user) =>
@@ -7,7 +8,7 @@ export const AuthContext = createContext({
 
 export const AuthProvider = (props) => {
   const { children } = props;
-  const [userInfo, setUserInfo] = useState("");
+  const [userInfo, setUserInfo] = useState(""); // Cambia el valor inicial si es necesario
 
   return (
     <AuthContext.Provider value={{ userInfo, setUserInfo }}>

@@ -1,7 +1,9 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Index from "./components/index/Index";
 import VistaIndex from "./vistas/VistaIndex";
-import { AuthProvider } from "./components/auth/Index"; // Importa solo AuthProvider
+import { AuthProvider } from "./components/auth/Index";
+import { AuthRouteComponent } from "./components/auth/Index";
 
 const loading = (
   <div className="pt-3 text-center">
@@ -14,15 +16,22 @@ const Layout = lazy(() => import("./containers/Layout"));
 function App() {
   return (
     <AuthProvider>
-      <Router>
-        <Suspense fallback={loading}>
-          <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<VistaIndex />} />
-            </Route>
-          </Routes>
-        </Suspense>
-      </Router>
+      <Suspense fallback={loading}>
+        <Routes>
+          <Route path="/" element={<Index />} />
+
+          <Route
+            path="/vista"
+            element={
+              <AuthRouteComponent>
+                <Layout>
+                  <VistaIndex />
+                </Layout>
+              </AuthRouteComponent>
+            }
+          />
+        </Routes>
+      </Suspense>
     </AuthProvider>
   );
 }

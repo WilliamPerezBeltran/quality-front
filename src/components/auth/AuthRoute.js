@@ -1,25 +1,19 @@
-import React from 'react';
-import { useNavigate, useLocation, Outlet } from 'react-router-dom';
-import Cookies from 'js-cookie';
-import { AuthContext } from "../auth/AuthContext.js";
+import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import Cookies from "js-cookie";
+import { AuthContext } from "./AuthContext";
 
-
-export const AuthRouteComponent = ({ path }) => {
+export const AuthRouteComponent = ({ children }) => {
   const { userInfo } = React.useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
 
   React.useEffect(() => {
-    const user = Cookies.get('access_token');
-    if (user) {
-      navigate(path, { replace: true });
-    } else {
-      if (!userInfo) {
-        navigate("/", { replace: true });
-      }
+    const user = Cookies.get("access_token");
+    if (!user) {
+      navigate("/", { replace: true }); // Redirige si no está autenticado
     }
-  }, [location.pathname, navigate, path, userInfo]);
+  }, [navigate, userInfo, location.pathname]);
 
-  // Render children if authorized
-  return <Outlet />;
+  return userInfo ? children : null; // Renderiza hijos si está autenticado
 };

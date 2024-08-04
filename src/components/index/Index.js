@@ -5,7 +5,7 @@ import SignIn from "../signin/SignIn";
 import "./Index.css";
 const Index = () => {
   return (
-    <div class="container-auth">
+    <div className="container-index">
       <SignIn />
       <SignUp />
     </div>
