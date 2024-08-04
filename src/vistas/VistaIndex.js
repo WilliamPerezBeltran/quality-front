@@ -1,9 +1,9 @@
 import React, { Component, lazy, Suspense } from "react";
-
+import Table from "../components/table/Table";
 function VistaIndex() {
   return (
-    <div>
-      <p>vista index</p>
+     <div >
+      <Table />
     </div>
   );
 }
