@@ -83,7 +83,7 @@ function SignUp() {
             onChange={handleChange}
           />
         </div>
-        <button class="button-signup" type="submit">
+        <button className="button-signup" type="submit">
           Sign Up
         </button>
       </form>

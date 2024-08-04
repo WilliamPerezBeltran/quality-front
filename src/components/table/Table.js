@@ -2,7 +2,7 @@ import "./Table.css";
 
 function Table() {
   return (
-    <div class="container-table">
+    <div className="container-table">
       <table id="table">
         <tr>
           <th>product</th>

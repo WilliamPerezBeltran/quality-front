@@ -52,7 +52,7 @@ function SignIn() {
           />
         </div>
 
-        <button class="button-signin" type="submit">
+        <button className="button-signin" type="submit">
           Sign in
         </button>
       </form>
