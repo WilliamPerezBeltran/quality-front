@@ -5,7 +5,6 @@ function SignIn() {
   const [formData, setFormData] = useState({
     username: "",
     password: "",
-    last_name: "",
   });
 
   const handleChange = (e) => {

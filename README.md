@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# quality-test-front 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Test](https://simba-latam.notion.site/Desarrollador-Full-Stack-d5d80e82bf194abc8adebdd63cf920bd)
 
-## Available Scripts
+## Stack
+-v18.6.0
+- @testing-library/jest-dom": "^5.17.0
+- @testing-library/react": "^13.4.0
+- @testing-library/user-event": "^13.5.0
+- axios": "^1.7.3
+- js-cookie": "^3.0.5
+- prettier": "^3.3.3
+- react": "^18.3.1
+- react-dom": "^18.3.1
+- react-redux": "^9.1.2
+- react-router-dom": "^6.16.0
+- react-router-hash-link": "^2.4.3
+- react-scripts": "5.0.1
+- redux": "^5.0.1
+- web-vitals": "^2.1.4"
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Clone repo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+# Clone repo (ssh)
+$ git@github.com:WilliamPerezBeltran/quality-front.git
 
-### `npm test`
+# Clone repo (http)
+$ https://github.com/WilliamPerezBeltran/quality-front.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Go to app directory
+$ cd quality-front
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Install depedencies
+$ npm install or yarn install
+```
+## Installation
+- npm install or yarn install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run app
+```bash
+$ npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## What's included
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+.
+├── info
+├── package.json
+├── package-lock.json
+├── public
+│   ├── favicon.ico
+│   ├── index.css
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── README.md
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── components
+    │   ├── auth
+    │   │   ├── AuthContext.js
+    │   │   ├── AuthRoute.js
+    │   │   └── Index.js
+    │   ├── footer
+    │   │   ├── Footer.css
+    │   │   └── Footer.js
+    │   ├── header
+    │   │   ├── Header.css
+    │   │   └── Header.js
+    │   ├── index
+    │   │   ├── Index.css
+    │   │   └── Index.js
+    │   ├── signin
+    │   │   ├── SignIn.css
+    │   │   └── SignIn.js
+    │   ├── signup
+    │   │   ├── SignUp.css
+    │   │   └── SignUp.js
+    │   └── table
+    │       ├── Table.css
+    │       └── Table.js
+    ├── constants
+    │   └── Constants.js
+    ├── containers
+    │   ├── Content.js
+    │   ├── index.js
+    │   └── Layout.js
+    ├── images
+    ├── index.css
+    ├── index.js
+    ├── reportWebVitals.js
+    ├── services
+    │   └── FetchCreateUser.js
+    ├── setupTests.js
+    └── vistas
+        ├── VistaIndex.css
+        └── VistaIndex.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
 
-## Learn More
+## Creator
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**William Pérez**
+- [William Pérez github](https://github.com/WilliamPerezBeltran)

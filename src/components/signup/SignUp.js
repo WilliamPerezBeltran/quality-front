@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./SignUp.css";
+import { FetchCreateUser } from '../../services/FetchCreateUser';
+
 
 function SignUp() {
   const [formData, setFormData] = useState({
@@ -18,13 +20,21 @@ function SignUp() {
     }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-    } catch (error) {
-      console.error("Error registering user:", error);
-    }
-  };
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    console.log(formData)
+    console.log(formData)
+    console.log(formData)
+    console.log(formData)
+    const { username, password, email, first_name, last_name } = formData;
+    const response = await FetchCreateUser(email, password, username, first_name, last_name);
+    console.log('User creation response:', response);
+    // Aquí puedes manejar la respuesta según lo necesario
+  } catch (error) {
+    console.error("Error registering user:", error);
+  }
+};
 
   return (
     <div className="signup-form-container">
